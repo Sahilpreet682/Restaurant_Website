@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Holy Moly's</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+
+<body>
+    <script>
+        function data() {
+            var a = document.getElementById("name").value;
+            var b = document.getElementById("email").value;
+            var c = document.getElementById("message").value;
+
+            if (a == "" || b == "" || c == "") {
+                alert("All fields are mandatory");
+                return false;
+            }
+            else {
+                true;
+            }
+
+        }
+    </script>
+    <nav CLASS="navi">
+        <a class="home" href="home.html">Home</a>
+        <a class="about" href="about.html" target="blank">About</a>
+        <a class="menu" href="menu.html" target="blank">Menu</a>
+        <a class="gallery" href="gallery.html" target="blank">Gallery</a>
+        <a class="tips" href="healthytips.html" target="blank">Healthy Tips</a>
+        <a class="contact" href="contactus.html" target="blank">Contact Us</a>
+    </nav>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <section id="contact-form">
+            <h2>Get in Touch</h2>
+            <form onsubmit="return(data)" action="thanks.html">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <address>
+                <p><strong>Holy Moly's Restaurant</strong></p>
+                <p>sector 65, Main Street</p>
+                <p>Chandigarh,144011</p>
+                <p>Email: info@holymolys.com</p>
+                <p>Phone: +91-8218842512</p>
+            </address>
+        </section>
+    </main>
+    <footer>
+        &copy; 1998 Holy Moly's Restaurant
+    </footer>
+</body>
+
+</html>
